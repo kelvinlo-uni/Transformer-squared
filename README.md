@@ -1,5 +1,5 @@
 # Transformer over Pre-trained Transformer for Neural Text Segmentation with Enhanced Topic Coherence
-This is the implementation of Transformer$^2$ from the following paper:
+This is the implementation of Transformer<sup>2</sup> from the following paper:
 
 ## Dependencies
 This repository is built on Python 3.6.

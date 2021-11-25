@@ -26,6 +26,6 @@ This repository is built on Python 3.6.
 To prepare sentence embeddings of single sentence
 `python prepare_single_sentence_embeddings.py`
 <ul>
-<li><pre>--model &lt;model_name&gt;</pre></li>
-<li><pre>--corpus &lt;corpus_name&gt;</pre></li>
+<li>`--model &lt;model_name&gt;`</li>
+<li>`--corpus &lt;corpus_name&gt;`</li>
 </ul>

@@ -1,5 +1,6 @@
 # Transformer over Pre-trained Transformer for Neural Text Segmentation with Enhanced Topic Coherence
-This is the implementation of Transformer<sup>2</sup> from the following paper:
+This is the implementation of Transformer<sup>2</sup> from the following paper:<br />
+Kelvin Lo, Yuan Jin, Weicong Tan, Ming Liu, Lan Du, Wray Buntine. <a href='https://aclanthology.org/2021.findings-emnlp.283/' target='_blank'>Transformer over Pre-trained Transformer for Neural Text Segmentation with Enhanced Topic Coherence</a>
 ```
 @inproceedings{lo-etal-2021-transformer-pre,
     title = "Transformer over Pre-trained Transformer for Neural Text Segmentation with Enhanced Topic Coherence",

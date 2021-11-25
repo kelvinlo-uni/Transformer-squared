@@ -72,4 +72,4 @@ python transformer_squared_single_pairwise.py
 --output_result <str>: prefix of output result file
 ```
 To replicate the result in the paper:<br />
-`python transformer_squared_single_pairwise.py --model BERT --corpus en_disease --attn_head 24 --epoch 500 --batch_size 16 --mask_b_rate 1 --mask_i_rate 0.3 --train_step 100 --val_step 100 --encoder_layers 5 --encoder_dff 1024`
+```python transformer_squared_single_pairwise.py --model BERT --corpus en_disease --attn_head 24 --epoch 500 --batch_size 16 --mask_b_rate 1 --mask_i_rate 0.3 --train_step 100 --val_step 100 --encoder_layers 5 --encoder_dff 1024```

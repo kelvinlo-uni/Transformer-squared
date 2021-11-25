@@ -22,5 +22,10 @@ This repository is built on Python 3.6.
 	<tr><td>&lt;corpus_name&gt;</td><td>en_city/en_disease/de_city/de_disease</td></tr>
 </table>
 
-Prepare single sentence embeddings
-`python prepare_single_sentence_embeddings.py --model <model_name> --corpus <corpus_name>`
+### 1. Prepare single sentence embeddings
+To prepare sentence embeddings of single sentence
+`python prepare_single_sentence_embeddings.py`
+<ul>
+<li><pre>--model &lt;model_name&gt;</pre></li>
+<li><pre>--corpus &lt;corpus_name&gt;</pre></li>
+</ul>

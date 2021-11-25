@@ -18,7 +18,7 @@ This repository is built on Python 3.6.
 ## Usage
 <table>
 	<thead><td>variable name</td><td>possible values</td></thead>
-	<tr><td>&lt;model_name&gt;</td><td>BERT/BERTL/BLUEBERT/BIOCLINICALBERT/DEBERT</td></tr>
+	<tr><td>&lt;model_name&gt;</td><td>ALBERT/BERT/BERTL/BLUEBERT/BIOCLINICALBERT/BIOMED_ROBERTA/DEBERT/XLNET</td></tr>
 	<tr><td>&lt;corpus_name&gt;</td><td>en_city/en_disease/de_city/de_disease</td></tr>
 	<tr><td>&lt;max_sent&gt;</td><td>Integer</td></tr>
 	<tr><td>&lt;is_tensorflow&gt;</td><td>T/F</td></tr>

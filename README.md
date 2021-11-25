@@ -2,7 +2,7 @@
 
 
 
-Dependencies:
+## Dependencies
 The code is tested on Python 3.6.
 <ol>
 <li>nltk 3.5</li>

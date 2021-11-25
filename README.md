@@ -75,3 +75,29 @@ To replicate the result in the paper:<br />
 ```
 python transformer_squared_single_pairwise.py --model BERT --corpus en_disease --attn_head 24 --epoch 500 --batch_size 16 --mask_b_rate 1 --mask_i_rate 0.3 --train_step 100 --val_step 100 --encoder_layers 5 --encoder_dff 1024
 ```
+
+#### 3.2 Model with pairwise sentence embeddings only
+
+```
+python transformer_squared_pairwise_only.py
+
+--corpus <corpus_name> : which corpus to train and test on
+--seq_len <int> : maximum number of document sentences
+--embed_dim <int> : input cls dimension
+--attn_head <int> : number of attention heads
+--encoder_layers <int> : number of encoder layers
+--encoder_dff <int> : dimension of feed forward pointwise network
+--epoch <int> : number of epochs in training
+--batch_size <int> : batch size
+--mask_b_rate <float> : probability of begin segment remains
+--mask_i_rate <float> : probability of inner segment remains
+--train_step <int> : number of training steps for each epoch
+--val_step <int> : number of validation steps for each epoch
+--lr <float> : learning rate
+--patience <int> : patience of early stopping
+--output_result <str>: prefix of output result file
+```
+To replicate the result in the paper:<br />
+```
+python transformer_squared_pairwise_only.py --model BERT --corpus en_disease --attn_head 24 --epoch 500 --batch_size 16 --mask_b_rate 1 --mask_i_rate 0.3 --train_step 100 --val_step 100 --encoder_layers 5 --encoder_dff 1024 --patience 20 --lr 0.0001
+```

@@ -43,35 +43,43 @@ This repository is built on Python 3.6.
 	<tr><td>&lt;is_tensorflow&gt;</td><td>T/F</td></tr>
 </table>
 
-### 1. Prepare single sentence embeddings
+### 1. Prepare topic labels lookup
+
+```
+python create_label_dict.py
+
+--corpus <corpus_name> : the corpus build topic labels lookup
+```
+
+### 2. Prepare single sentence embeddings
 To prepare sentence embeddings of single sentence
 
 ```
 python prepare_single_sentence_embeddings.py
 
---model <model_name> : pre-trained transformer used to encode sentenve
+--model <model_name> : pre-trained transformer used to encode sentence
 --corpus <corpus_name> : the corpus to encode
 --max_sent <max_sent> : maximum number of sentences to encode for each document
 --tf <is_tensorflow> : use tensorflow(default: T), use F if <model_name> in ['BIOCLINICALBERT','BIOMED_ROBERTA']
 ```
 
-### 2. Prepare pairwise sentence embeddings
+### 3. Prepare pairwise sentence embeddings
 To prepare sentence embeddings of a pair of consecutive sentences
 
 ```
 python prepare_pairwise_sentence_embeddings.py
 
---model <model_name> : pre-trained transformer used to encode sentenve
+--model <model_name> : pre-trained transformer used to encode sentence
 --corpus <corpus_name> : the corpus to encode
 --max_sent <max_sent> : maximum number of sentences to encode for each document
 --tf <is_tensorflow> : use tensorflow(default: T), use F if <model_name> in ['BIOCLINICALBERT','BIOMED_ROBERTA']
 ```
 
-### 3. Train and Evaluation
+### 4. Train and Evaluation
 
 In order to train and test the models, you need to prepare both single and pairwise embeddings.
 
-#### 3.1 Model with single and pairwise sentence embeddings
+#### 4.1 Model with single and pairwise sentence embeddings
 
 ```
 python transformer_squared_single_pairwise.py
@@ -97,7 +105,7 @@ To replicate the result in the paper:<br />
 python transformer_squared_single_pairwise.py --model BERT --corpus en_disease --attn_head 24 --epoch 500 --batch_size 16 --mask_b_rate 1 --mask_i_rate 0.3 --train_step 100 --val_step 100 --encoder_layers 5 --encoder_dff 1024
 ```
 
-#### 3.2 Model with pairwise sentence embeddings only
+#### 4.2 Model with pairwise sentence embeddings only
 
 ```
 python transformer_squared_pairwise_only.py

@@ -1,5 +1,24 @@
 # Transformer over Pre-trained Transformer for Neural Text Segmentation with Enhanced Topic Coherence
 This is the implementation of Transformer<sup>2</sup> from the following paper:
+```
+@inproceedings{lo-etal-2021-transformer-pre,
+    title = "Transformer over Pre-trained Transformer for Neural Text Segmentation with Enhanced Topic Coherence",
+    author = "Lo, Kelvin  and
+      Jin, Yuan  and
+      Tan, Weicong  and
+      Liu, Ming  and
+      Du, Lan  and
+      Buntine, Wray",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2021",
+    month = nov,
+    year = "2021",
+    address = "Punta Cana, Dominican Republic",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.findings-emnlp.283",
+    pages = "3334--3340",
+    abstract = "This paper proposes a transformer over transformer framework, called Transformer{\^{}}2, to perform neural text segmentation. It consists of two components: bottom-level sentence encoders using pre-trained transformers, and an upper-level transformer-based segmentation model based on the sentence embeddings. The bottom-level component transfers the pre-trained knowledge learnt from large external corpora under both single and pair-wise supervised NLP tasks to model the sentence embeddings for the documents. Given the sentence embeddings, the upper-level transformer is trained to recover the segmentation boundaries as well as the topic labels of each sentence. Equipped with a multi-task loss and the pre-trained knowledge, Transformer{\^{}}2 can better capture the semantic coherence within the same segments. Our experiments show that (1) Transformer{\^{}}2{\$}manages to surpass state-of-the-art text segmentation models in terms of a commonly-used semantic coherence measure; (2) in most cases, both single and pair-wise pre-trained knowledge contribute to the model performance; (3) bottom-level sentence encoders pre-trained on specific languages yield better performance than those pre-trained on specific domains.",
+}
+```
 
 ## Dependencies
 This repository is built on Python 3.6.

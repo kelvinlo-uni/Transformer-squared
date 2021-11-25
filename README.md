@@ -1,6 +1,5 @@
-# Transformer-squared
-
-
+# Transformer over Pre-trained Transformer for Neural Text Segmentation with Enhanced Topic Coherence
+This is the implementation of Transformer$^2$ from the following paper:
 
 ## Dependencies
 This repository is built on Python 3.6.
@@ -49,6 +48,8 @@ python prepare_pairwise_sentence_embeddings.py
 ```
 
 ### 3. Train and Evaluation
+
+In order to train and test the models, you need to prepare both single and pairwise embeddings.
 
 #### 3.1 Model with single and pairwise sentence embeddings
 
